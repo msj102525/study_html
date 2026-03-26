@@ -6,8 +6,12 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
         e.preventDefault();
 
+        const nav = document.querySelector('nav');
+        const navHeight = nav ? nav.offsetHeight : 0;
+        const extraOffset = 16;
+
         const startY = window.scrollY;
-        const endY = target.getBoundingClientRect().top + startY;
+        const endY = Math.max(target.getBoundingClientRect().top + startY - navHeight - extraOffset, 0);
         const distance = endY - startY;
         const duration = Math.min(Math.abs(distance) * 0.5, 900);
         let startTime = null;

@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML5 웹프로그래밍 과제 | 문승종 202534-159139</title>
+    <link rel="preconnect" href="https://skillicons.dev" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
 
@@ -34,7 +35,7 @@
         <section id="about">
             <h2>소개</h2>
             <article>
-                <img src="images/profile.jpg" alt="문승종 프로필 사진" loading="lazy" width="160" height="160" />
+                <!-- <img src="images/profile.jpg" alt="문승종 프로필 사진" loading="lazy" width="160" height="160" /> -->
                 <div class="about-text">
                     <p>안녕하세요 개발자 2년차 <strong>문승종</strong>입니다.</p>
                     <p>현재 <strong>한국방송통신대학교 컴퓨터과학과 2학년</strong>에 재학 중이며,
@@ -45,31 +46,56 @@
 
         <section id="skills">
             <h2>기술 스택</h2>
-            <article>
+            <article class="skills-card">
+                <img class="skills-icons" src="https://skillicons.dev/icons?i=html,css,js,nodejs,java,spring,react,fastapi,mysql,py&theme=light&perline=5" alt="HTML, CSS, JavaScript, Node.js, Java, Spring, React, FastAPI, MySQL, Python 기술 스택 아이콘" loading="lazy" />
                 <ul class="skill-list">
-                    <li>HTML5 / CSS3</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
                     <li>JavaScript</li>
                     <li>Node.js</li>
                     <li>Java</li>
-                    <li>Spring, SpringBoot</li>
+                    <li>Spring</li>
+                    <li>Spring Boot</li>
+                    <li>React</li>
+                    <li>FastAPI</li>
+                    <li>MySQL</li>
+                    <li>Python</li>
                 </ul>
             </article>
         </section>
 
         <section id="projects">
             <h2>프로젝트</h2>
+
             <article class="card">
-                <h3>프로젝트 A</h3>
-                <img src="images/project-a.jpg" alt="프로젝트 A 스크린샷" loading="lazy" />
-                <p>간단한 프로젝트 설명을 여기에 작성합니다. 사용 기술, 역할 등을 기재하세요.</p>
-                <a href="https://github.com/your-repo" target="_blank" rel="noopener">GitHub 바로가기</a>
+                <h3>Staika <span class="card-period">· 현재</span></h3>
+                <img src="img/project_1.png" alt="Staika 서비스 스크린샷" loading="lazy" />
+                <p>생성형 AI 서비스 <a href="https://staika.io/" target="_blank" rel="noopener">staika.io</a>의 백엔드 개발자로서 서비스
+                    운영 및 유지보수를 담당하고 있습니다.</p>
+                <ul class="card-detail">
+                    <li><strong>역할</strong>: 백엔드 개발자 (유지보수)</li>
+                </ul>
             </article>
 
             <article class="card">
-                <h3>프로젝트 B</h3>
-                <img src="images/project-b.jpg" alt="프로젝트 B 스크린샷" loading="lazy" />
-                <p>간단한 프로젝트 설명을 여기에 작성합니다. 사용 기술, 역할 등을 기재하세요.</p>
-                <a href="https://github.com/your-repo" target="_blank" rel="noopener">GitHub 바로가기</a>
+                <h3>Wiz <span class="card-period">· 8개월~</span></h3>
+                <img src="img/project_2.png" alt="Wiz 서비스 스크린샷" loading="lazy" />
+                <p>생성형 AI 기반 상권 분석 및 광고 서비스입니다. 데이터 수집부터 인프라 구축, MVP 개발까지 전반적인 백엔드 업무를 담당했습니다.</p>
+                <ul class="card-detail">
+                    <li><strong>기술 스택</strong>: React, FastAPI, MySQL, Node.js, Python</li>
+                    <li><strong>담당 역할</strong>: 상권 분석 데이터 수집, API 개발, DB 설계 및 구축, CMS 개발</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>똑똑비 <span class="card-period">· 3개월</span></h3>
+                <img src="img/project_3.png" alt="JSAM 앱 스크린샷" loading="lazy" />
+                <p>자동 콜백 문자 서비스(똑똑비) 앱 리뉴얼 프로젝트입니다. API 및 웹뷰 개발을 담당했습니다.</p>
+                <ul class="card-detail">
+                    <li><strong>기술 스택</strong>: Spring, MySQL</li>
+                    <li><strong>담당 역할</strong>: 앱 리뉴얼, API 및 웹뷰 개발</li>
+                    <li><strong>주요 업무</strong>: 똑똑비 앱 API 개발 및 유지보수, 웹뷰 기능 개발 및 개선</li>
+                </ul>
             </article>
 
         </section>
@@ -77,19 +103,10 @@
         <section id="blog">
             <h2>기술 블로그</h2>
 
-            <article class="card">
-                <h3>첫 번째 글 제목</h3>
-                <p class="date">2026-03-01</p>
-                <p>블로그 글 요약 내용을 여기에 작성합니다. 배운 점, 트러블슈팅 경험 등을 공유하세요.</p>
-                <a href="#top">목록 위로 가기</a>
-            </article>
-
-            <article class="card">
-                <h3>두 번째 글 제목</h3>
-                <p class="date">2026-03-15</p>
-                <p>블로그 글 요약 내용을 여기에 작성합니다. 배운 점, 트러블슈팅 경험 등을 공유하세요.</p>
-                <a href="#top">목록 위로 가기</a>
-            </article>
+            <li>블로그:
+                <a href="https://door-win-bell.tistory.com/" target="_blank"
+                    rel="noopener">door-win-bell.tistory.com</a>
+            </li>
 
         </section>
 
@@ -97,9 +114,9 @@
             <h2>연락처</h2>
             <article>
                 <ul class="contact-list">
-                    <li>이메일: <a href="mailto:your@email.com">your@email.com</a></li>
+                    <li>이메일: msj102525@naver.com</li>
                     <li>GitHub:
-                        <a href="https://github.com/your-id" target="_blank" rel="noopener">github.com/your-id</a>
+                        <a href="https://github.com/msj102525" target="_blank" rel="noopener">github.com/msj102525</a>
                     </li>
                     <li>학교: 한국방송통신대학교 컴퓨터과학과</li>
                 </ul>
@@ -109,7 +126,7 @@
     </main>
 
     <footer>
-        <p>© 2026 문승종. All rights reserved.</p>
+        <p>© 2026 문승종 HTML5 웹 프로그래밍 과제</p>
         <p><a href="#top">맨 위로 ↑</a></p>
     </footer>
 
